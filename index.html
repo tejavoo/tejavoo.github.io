@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Angular Material style sheet -->
+
+  <style media="screen" type="text/css">
+      .layer1_class { position: absolute; z-index: 1; visibility: visible; }
+
+      @media only screen and (max-width: 325px) {
+          .ldimg{
+            width:325px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        
+      .layer2_class { position: absolute; z-index: 2; visibility: hidden }
+    </style>
+    <script>
+      function downLoad(){
+        if (document.all){
+            document.all["layer1"].style.visibility="hidden";
+            document.all["layer2"].style.visibility="visible";
+        } else if (document.getElementById){
+            node = document.getElementById("layer1").style.visibility='hidden';
+            node = document.getElementById("layer2").style.visibility='visible';
+        }
+      }
+    </script>
+
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="putApp" ng-controller="putCtrl" ng-cloak  onload="downLoad()">
+  <!--
+    Your HTML content here
+  -->  
+
+
+<div id="layer1" class="layer1_class">
+      <img src="./loading.gif" class="ldimg">
+    </div>
+
+
+<div id="layer2" class="layer2_class">
+
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+          <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+          <span>PutGrub</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+
+ <div class="putdes" hide-xs>
+    I love the deliciousness of certain words-the way something as ordinary as chocolate can take on an entire new personality when dressed up with adjectives like warm, rich, thick, gooey, chilled, creamy, or frothy.
+  </div>
+
+
+<div class="ul" flex="20"  hide-xs></div>
+
+
+<div layout="row">
+  <span flex="20" hide-xs></span>
+  <div class="cardcontainer" flex layout="column" layout-align="center">
+    <div style="height:70px;"></div>
+
+
+
+
+
+
+
+    <div class="card" flex ng-repeat="item in putData">
+      <md-card>
+        <div layout="row">
+          <div class="loremtext md-padding" flex="30">
+              <div class="cardtitle">{{item.fields.name}}</div>
+              <hr>
+                <div class="description">
+                  {{item.fields.description}}
+                  
+                  <div class="cost">Rs {{item.fields.cost}}</div>
+                </div>
+          </div>
+          <div class="md-padding" flex>
+            <img ng-src="http://iitm5.cloudapp.net/media/{{item.fields.pic}}">
+          </div>
+        </div>
+      </md-card>
+    </div>
+
+  <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+  <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+
+
+
+
+    <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+  <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+
+
+
+    <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+  <div class="card" flex>
+    <md-card>
+      <div layout="row">
+        <div class="loremtext md-padding" flex="30">
+          <div class="cardtitle">Coffee PannaCotta</div>
+              <hr>
+                <div class="description">
+                    Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                    <div class="cost">Rs 200</div>
+                </div>
+        </div>
+        <div class="md-padding" flex>
+          <img src="https://source.unsplash.com/800x600/?nature,water">
+        </div>
+      </div>
+    </md-card>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  </div>
+</div>
+    <!--div class="card">
+      <md-card>Lorem Ipsum Dolor Sit Amet<br>Lorem Ipsum Dolor Sit Amet<br>Lorem Ipsum Dolor Sit Amet<br><div layout="column"><span flex></span></div>Lorem Ipsum Dolor Sit Amet<br></md-card>
+    </div-->
+
+</div>
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script src="./scripts.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="putstyle.css">
+
+
+
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
