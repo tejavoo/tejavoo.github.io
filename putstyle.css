@@ -72,6 +72,10 @@ md-card{
 	overflow-x:hidden;
 }
 
+.imgg{
+	max-width: 80%;
+}
+
 .loremtext{
 	font-size: 14px;
 	position: relative;
