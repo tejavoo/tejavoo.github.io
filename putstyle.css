@@ -2,6 +2,8 @@ html,body{
 	background: #E0F2F1;
 	height:100%;
 	font-family: 'Roboto', sans-serif;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 
@@ -66,6 +68,8 @@ md-card{
 	color: white;
 	width: 18%;
 	left: 1%;
+	overflow-y:auto;
+	overflow-x:hidden;
 }
 
 .loremtext{
