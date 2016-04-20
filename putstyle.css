@@ -19,6 +19,7 @@ md-card{
 
 .card{
 	margin-bottom: 20px;
+	z-index: -5;
 }
 
 .cardcontainer{
