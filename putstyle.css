@@ -75,15 +75,15 @@ md-card{
 
 
 .mdes{
-	overflow-y:auto ;
-	height: 50%;
-	font-family: fantasy;
+	overflow-y:none ;
+	height: 100%;
+	font-family: roboto;
 
 }
 
 .imgg{
-	max-width: 76%;
-	margin-left: 12%;
+	max-width: 48%;
+	margin-left: 0%;
 }
 
 .loremtext{
