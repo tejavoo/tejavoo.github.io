@@ -1,97 +1,21 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="print/img/favicon2.png" type="image/png">
   <!-- Angular Material style sheet -->
 
-  <style media="screen" type="text/css">
-      .layer1_class { 
-        position: absolute; 
-        z-index: 1; 
-        visibility: visible;
-        width: 100%;
-        height: 100%;
-        margin: 0px auto;
-        overflow-x:hidden;
-        overflow-y:hidden;
-        background: #E0F2F1;
-         }
-.spinner {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: 20% auto;
-}
-.double-bounce1, .double-bounce2 {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #FF5722;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}
-.double-bounce2 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}
-@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
-}
-      @media only screen and (max-width: 325px) {
-          .ldimg{
-            width:325px;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-        
-      .layer2_class { position: absolute; z-index: 2; visibility: hidden }
-    </style>
-    <script>
-      function downLoad(){
-        if (document.all){
-            document.all["layer1"].style.display="none";
-            document.all["layer2"].style.visibility="visible";
-        } else if (document.getElementById){
-            node = document.getElementById("layer1").style.display='none';
-            node = document.getElementById("layer2").style.visibility='visible';
-        }
-      }
-    </script>
+
 
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-<body ng-app="putApp" ng-controller="putCtrl" ng-cloak onload="downLoad()">
+<body ng-app="putApp" ng-controller="putCtrl" ng-cloak>
   <!--
     Your HTML content here
   -->  
 
+<div>
 
-<div id="layer1" class="layer1_class">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
-    </div>
-
-
-<div id="layer2" class="layer2_class">
 
     <md-toolbar>
       <div class="md-toolbar-tools">
@@ -128,7 +52,7 @@ Salvation at Himalayas,<br>
 salivation too <br>
 PutGrub is on floor 2! <br>
 <br>
-8 pm to 1 am,<br> 
+<strong>8 pm to 1 am</strong>,<br> 
 when hunger obstructs your ease<br>
 with our food weaponry,<br> you can put peace.<br><br>
   </div></div>
@@ -138,16 +62,15 @@ with our food weaponry,<br> you can put peace.<br><br>
 
 
 <div layout="row">
-  <span style="width:20%" hide-xs></span>
+  <span flex="20" hide-xs></span>
   <div class="cardcontainer" flex layout="column" layout-align="center">
     <div style="height:70px;"></div>
 
 
-
-    <div class="card" flex>
+    <div class="card">
       <md-card>
         <div layout="column">
-          <div class="loremtext md-padding" flex="50">
+          <div class="loremtext md-padding" flex="30">
               <div class="cardtitle">PutGrub!</div>
               <hr>
                 <div class="description" style="text-align:center;">
@@ -193,13 +116,16 @@ with our food weaponry,<br> you can put peace.<br><br>
 
 
 
+
   </div>
+</div>
+
 </div>
     <!--div class="card">
       <md-card>Lorem Ipsum Dolor Sit Amet<br>Lorem Ipsum Dolor Sit Amet<br>Lorem Ipsum Dolor Sit Amet<br><div layout="column"><span flex></span></div>Lorem Ipsum Dolor Sit Amet<br></md-card>
     </div-->
 
-</div>
+<!--/div-->
   
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
