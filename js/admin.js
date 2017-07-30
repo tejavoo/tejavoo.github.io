@@ -211,7 +211,7 @@ app.controller('doPaymentCtrl', function($scope, $localStorage,$http) {
                             fh.append("security_key", $localStorage.security_key);           
                             fh.append("debit_amount", $scope.amount);           
                             fh.append("type", "Credit");           
-                            var captureURL = "http://putpeace.com/api/make_payment/" + $localStorage.pk + "/" + response.razorpay_payment_id + "/"
+                            var captureURL = "http://iitm.cloudapp.net/api/make_payment/" + $localStorage.pk + "/" + response.razorpay_payment_id + "/"
                             $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";    
                             $scope.caputurePay(captureURL,fh);
                           },

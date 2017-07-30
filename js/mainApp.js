@@ -626,7 +626,7 @@ app.controller('PDFCtrl', function($scope, $http, $localStorage,$location) {
                             fh.append("security_key", $localStorage.security_key);           
                             fh.append("debit_amount", $scope.amount);           
                             fh.append("type", "Credit");           
-                            var captureURL = "http://putpeace.com/api/make_payment/" + $localStorage.pk + "/" + response.razorpay_payment_id + "/"
+                            var captureURL = "http://iitm.cloudapp.net/api/make_payment/" + $localStorage.pk + "/" + response.razorpay_payment_id + "/"
                             $scope.caputurePay(captureURL,fh);
                           },
                           "prefill": {
