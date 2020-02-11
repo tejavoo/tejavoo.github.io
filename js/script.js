@@ -107,6 +107,7 @@ $(function () {
 
         for(var i = currentIndex + 1; i < rp.photos.length; i++) {
             if (rp.photos[i].title.includes("[M]")) {
+                console.log(rp.photos[i].title)
                 return i;
             }
         }
