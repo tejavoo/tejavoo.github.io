@@ -1,0 +1,23 @@
+
+#main{
+       background-color: black;
+}
+
+#title #title-subtitle #img-caption #tribute-info{
+    color: #6ecc61;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: rgb(87, 187, 87);
+}
+
+#image{
+    max-width: 1080px;
+    width: 100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media only screen and (min-width: 412px) and (max-width: 767px) {  #main {min-height: 100vmax;} }
